@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html len="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        fieldset{
+            background-color: cyan;
+        }
+        legend{
+            background-color:beige ;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], textarea, select{
+            width: 100%
+            padding: 2px;
+            border-radius: 3px;
+            border: 1px solid black;
+        }
+        button{
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            background-color: beige;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/isekaii.jpg">
+    <fieldset>
+        <legend>Biodata</legend>
+        <label for="fname">Nama</label>
+        <td>:</td>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="name">Alamat</label>
+        <td>:</td>
+        <textarea></textarea><br>
+        <label for="title">TTL</label>
+        <td>:</td>
+        <input type="text" id="title" name="title">
+        <input type="date"><br>
+        <label for="kelamin">jenis kelamin</label>
+        <td>:</td>
+        <input type="radio" id="kelamin" name="kelamin" values="laki laki">
+        <label for="kelamin">laki-laki</label>
+        <input type="radio" id="kelamin" value="perempuan">
+        <label for="kelamin">perempuan</label><br>
+        <label for="agama">agama</label>
+        <td>:</td>
+        <select name=agama>
+        <option name="agama">islam
+        <option name="agama">kristen
+        <option name="agama">hindu
+        <option name="agama">budha
+        <option name="agama">konghucu
+        <option name="agama">katolik
+        </select><br>
+        <label for="hobby">Hobby</label>
+        <td>:</td>
+        <input type="checkbox" id="hobby" name="hobby" value="mancing">
+        <label for="checkbox">Mancing</label>
+        <input type="checkbox" id="hobby" name="hobby" value="olahraga">
+        <label for="checkbox">Olahraga</label><br>
+        <label for="motto">Motto</label>
+        <td>:</td>
+        <textarea></textarea><br>
+        <button type="submit">Reset</button>
+        <button type="submit">Simpan</button>
+        </fieldset>
+    </form>
+</body>
+</html>
