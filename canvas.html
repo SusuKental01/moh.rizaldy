@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas html</title>
+</head>
+<body>
+    <p>Image untuk digunakan:</p>
+    <img id="isekai" src="isekai.jpg" alt="isekai" width="220" height="227">
+
+    <p>Canvas untuk fill</p>
+    <canvas id="mycanvas" width="250" height="300" style="border: 1px solid black;"></canvas>
+
+    <p><button onclick="mycanvas()">Percobaan</button></p>
+
+    <script>
+        function mycanvas() {
+            var c = document.getElementById("mycanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("isekai");
+            ctx.drawImage(img,10,10);
+        }
+    </script>
+</body>
+</html>
